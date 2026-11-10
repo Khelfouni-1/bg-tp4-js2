@@ -1,0 +1,228 @@
+/* Style général */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #333;
+}
+
+.table-container {
+    width: 100%;
+    margin: center;
+}
+
+/* Tableau */
+#Table {
+    width: 60%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: 30%;
+    margin-top: 0;
+}
+
+/* Largeur des colonnes */
+#Table .col_number {
+    width: 10%;
+    text-align: center;
+}
+
+#Table .col_text {
+    width: 35%;
+    text-align: left;
+}
+
+#Table .col_checkbox {
+    width: 10%;
+    text-align: center;
+}
+
+/* En-tête */
+#Table .FirstRow {
+    background-color: #0783b9;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 26px;
+}
+
+#Table .FirstRow td {
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    padding: 5px;
+}
+
+/* Cellules du tableau */
+#Table tr:not(.FirstRow) {
+    height: 27px;
+    background-color: white;
+}
+
+#Table tr:not(.FirstRow) td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
+/* Cases à cocher */
+#Table input[type="checkbox"] {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+}
+
+/* Résumé sous le tableau */
+#cantair_summary {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    background-color: #eeeeee;
+    margin-left: 30%;
+
+}
+
+#cantair_summary p {
+    width: 33.33%;
+    margin: 0;
+    padding: 5px;
+}
+
+#p1 {
+    text-align: left;
+}
+
+#p2 {
+    text-align: center;
+}
+
+#p3 {
+    text-align: center;
+}
+
+/* Boutons */
+.AddButton,
+.ConsolButton,
+.SuppressionButton {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 1px 5px;
+    margin-left: 30%;
+    cursor: pointer;
+    border: none;
+}
+
+.AddButton {
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+}
+
+
+
+/* Formulaire au-dessus du tableau */
+.form_container {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+/* Chaque groupe : label + input */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 5px;
+}
+
+.form_label {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.form_field {
+    width: 100%;
+    height: 25px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+/* Bouton Ajouter */
+.form_container .AddButton {
+    margin: 0;
+    height: 25px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Conteneur des deux boutons */
+.buttons_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+/* Boutons Console et Suppression */
+.ConsolButton,
+.SuppressionButton {
+    margin: 0;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.ConsolButton {
+    background-color: brown;
+}
+
+.SuppressionButton {
+    background-color: red;
+}
+
+/* Chaque groupe : label + input */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 5px;
+    margin-bottom: 0.5%;
+}
+
+.form_label {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.form_field {
+    width: 100%;
+    height: 25px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+/* Bouton Ajouter dans le formulaire */
+.form_container .AddButton {
+    margin-left: 0;
+    height: 25px;
+    white-space: nowrap;
+    cursor: pointer;
+}

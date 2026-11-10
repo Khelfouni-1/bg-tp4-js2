@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../etape1/index.css">
+    <title>Etape 1 JavaScript</title>
+</head>
+
+
+<body>
+
+<div class="table-container">
+
+    <table id="Table">
+        <tr class="FirstRow">
+            <td class="col_number">Num</td>
+            <td class="col_text">Nom</td>
+            <td class="col_text">Prenom</td>
+            <td class="col_number">Points</td>
+            <td class="col_checkbox">Select</td>
+        </tr>
+
+    </table>
+
+    <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)" class="AddButton">Add</button>
+    <button class="ConsolButton" onclick="consoleTableau()">Console Tableau</button>
+</div>
+
+<script src="index.js"></script>
+
+
+</body>
